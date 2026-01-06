@@ -1,105 +1,12 @@
+/* ================= GLOBAL ================= */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f7f3;
-}
-
-.top {
-  background: #dfe8d8;
-  text-align: center;
-  padding: 30px;
-}
-
-nav {
-  background: #f1ebe2;
-  text-align: center;
-  padding: 12px;
-}
-
-nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  font-weight: bold;
-  color: #5a4a3c;
-}
-
-.container {
-  max-width: 850px;
-  margin: auto;
-  padding: 20px;
-}
-
-.card {
-  background: white;
-  padding: 22px;
-  margin-bottom: 25px;
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.answer {
-  background: #eaf4e2;
-}
-
-.btn {
-  display: inline-block;
-  background: #5b7f3c;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.foto {
-  width: 100%;
-  border-radius: 16px;
-  margin: 20px 0;
-}
-
-.quiz-box {
-  background: #fff7e6;
-}
-
-.options label {
-  display: block;
-  background: #f1f6ed;
-  padding: 10px;
-  margin: 6px 0;
-  border-radius: 8px;
-}
-
-.correct { background: #d4f5d4; }
-.wrong { background: #f8d7da; }
-
-.timer {
-  background: #5b7f3c;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 8px;
-  display: inline-block;
-  margin-bottom: 12px;
-}
-
-footer {
-  background: #5a4a3c;
-  color: white;
-  text-align: center;
-  padding: 18px;
-}
-
-@media (max-width: 768px) {
-  .container { padding: 15px; }
-}
-/* GLOBAL */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f5f4ef;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f5f4ef;
   color: #333;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -129,7 +36,7 @@ body {
   font-weight: bold;
 }
 
-/* HERO SECTION */
+/* ================= HERO ================= */
 .hero {
   background: linear-gradient(135deg, #d4e2b1, #f5efe6);
   text-align: center;
@@ -156,14 +63,9 @@ body {
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
 }
 
-.btn-hero:hover {
-  background: #558000;
-}
-
-/* INFO CARDS */
+/* ================= INFO CARDS ================= */
 .info-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -177,45 +79,108 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   text-align: center;
-  transition: transform 0.3s;
 }
 
-.info-card:hover {
-  transform: translateY(-6px);
-}
-
-.info-card h3 {
-  margin-top: 10px;
-  margin-bottom: 8px;
-}
-
-/* ILUSTRASI */
-.illus-section {
+/* ================= LAYOUT UMUM ================= */
+.top {
+  background: #dfe8d8;
   text-align: center;
-  margin: 40px 0;
+  padding: 30px;
 }
 
+nav {
+  background: #f1ebe2;
+  text-align: center;
+  padding: 12px;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #5a4a3c;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.answer {
+  background: #eaf4e2;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  display: inline-block;
+  background: #5b7f3c;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* ================= GAMBAR ================= */
+/* ilustrasi di index */
 .illus {
   max-width: 300px;
   width: 80%;
+  display: block;
+  margin: 30px auto;
 }
 
-/* QUOTE */
-.quote-section {
-  text-align: center;
-  margin-bottom: 60px;
+/* gambar materi (BIAR NGGAK GEDE) */
+.materi-img {
+  max-width: 260px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-.quote {
-  font-style: italic;
-  opacity: 0.7;
+/* ================= QUIZ ================= */
+.quiz-box {
+  background: #fff7e6;
 }
 
-/* FOOTER */
+.options label {
+  display: block;
+  background: #f1f6ed;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+}
+
+.timer {
+  background: #5b7f3c;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/* ================= FOOTER ================= */
 footer {
-  background-color: #6b8e23;
+  background: #5a4a3c;
   color: white;
   text-align: center;
-  padding: 15px 0;
-  font-size: 14px;
+  padding: 18px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .container { padding: 15px; }
+  .hero h1 { font-size: 28px; }
 }
