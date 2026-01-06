@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Matematika</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <h1>🧠 Quiz Matematika</h1>
+  <p>Persamaan & Pertidaksamaan Linear Satu Variabel</p>
+</header>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="materi.html">Materi</a>
+  <a href="quiz.html">Quiz</a>
+</nav>
+
+<section class="container">
+
+<div class="card quiz-box">
+<h2>Quiz Pilihan Ganda</h2>
+
+<div class="timer">
+⏱️ Waktu: <span id="time">300</span> detik
+</div>
+
+<form id="quizForm">
+
+<!-- SOAL 1 -->
+<div class="quiz-question">
+<p>1. x + 5 = 12, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q1" value="0"> 5</label>
+<label><input type="radio" name="q1" value="1"> 7</label>
+<label><input type="radio" name="q1" value="0"> 12</label>
+<label><input type="radio" name="q1" value="0"> 17</label>
+</div>
+</div>
+
+<!-- SOAL 2 -->
+<div class="quiz-question">
+<p>2. 3x = 18, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q2" value="0"> 3</label>
+<label><input type="radio" name="q2" value="1"> 6</label>
+<label><input type="radio" name="q2" value="0"> 9</label>
+<label><input type="radio" name="q2" value="0"> 18</label>
+</div>
+</div>
+
+<!-- SOAL 3 -->
+<div class="quiz-question">
+<p>3. 2x + 4 = 12, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q3" value="1"> 4</label>
+<label><input type="radio" name="q3" value="0"> 6</label>
+<label><input type="radio" name="q3" value="0"> 8</label>
+<label><input type="radio" name="q3" value="0"> 10</label>
+</div>
+</div>
+
+<!-- SOAL 4 -->
+<div class="quiz-question">
+<p>4. x - 7 = 5, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q4" value="1"> 12</label>
+<label><input type="radio" name="q4" value="0"> 2</label>
+<label><input type="radio" name="q4" value="0"> 5</label>
+<label><input type="radio" name="q4" value="0"> 7</label>
+</div>
+</div>
+
+<!-- SOAL 5 -->
+<div class="quiz-question">
+<p>5. x + 3 &gt; 7, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q5" value="0"> x &gt; 3</label>
+<label><input type="radio" name="q5" value="1"> x &gt; 4</label>
+<label><input type="radio" name="q5" value="0"> x &lt; 4</label>
+<label><input type="radio" name="q5" value="0"> x = 4</label>
+</div>
+</div>
+
+<!-- SOAL 6 -->
+<div class="quiz-question">
+<p>6. 2x - 4 ≤ 8, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q6" value="1"> x ≤ 6</label>
+<label><input type="radio" name="q6" value="0"> x ≥ 6</label>
+<label><input type="radio" name="q6" value="0"> x &lt; 4</label>
+<label><input type="radio" name="q6" value="0"> x = 6</label>
+</div>
+</div>
+
+<!-- SOAL 7 -->
+<div class="quiz-question">
+<p>7. 5x &gt; 15, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q7" value="1"> x &gt; 3</label>
+<label><input type="radio" name="q7" value="0"> x &lt; 3</label>
+<label><input type="radio" name="q7" value="0"> x = 3</label>
+<label><input type="radio" name="q7" value="0"> x ≥ 3</label>
+</div>
+</div>
+
+<!-- SOAL 8 -->
+<div class="quiz-question">
+<p>8. -2x ≥ -8, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q8" value="1"> x ≤ 4</label>
+<label><input type="radio" name="q8" value="0"> x ≥ 4</label>
+<label><input type="radio" name="q8" value="0"> x = 4</label>
+<label><input type="radio" name="q8" value="0"> x &lt; 4</label>
+</div>
+</div>
+
+<!-- SOAL 9 -->
+<div class="quiz-question">
+<p>9. 10 - x ≥ 4, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q9" value="1"> x ≤ 6</label>
+<label><input type="radio" name="q9" value="0"> x ≥ 6</label>
+<label><input type="radio" name="q9" value="0"> x = 6</label>
+<label><input type="radio" name="q9" value="0"> x &lt; 6</label>
+</div>
+</div>
+
+<!-- SOAL 10 -->
+<div class="quiz-question">
+<p>10. 3x ≤ 12, nilai x adalah …</p>
+<div class="options">
+<label><input type="radio" name="q10" value="1"> x ≤ 4</label>
+<label><input type="radio" name="q10" value="0"> x ≥ 4</label>
+<label><input type="radio" name="q10" value="0"> x &lt; 4</label>
+<label><input type="radio" name="q10" value="0"> x = 4</label>
+</div>
+</div>
+
+<button type="button" onclick="checkQuiz()" class="btn">
+Cek Jawaban
+</button>
+
+<p id="score"></p>
+
+</form>
+</div>
+
+</section>
+
+<footer>
+Catatan Matematika • Xavier
+</footer>
+
+<script>
+let timeLeft = 300;
+const timer = setInterval(() => {
+  document.getElementById("time").textContent = timeLeft;
+  timeLeft--;
+  if (timeLeft < 0) {
+    clearInterval(timer);
+    checkQuiz();
+  }
+}, 1000);
+
+function checkQuiz() {
+  clearInterval(timer);
+  let score = 0;
+  document.querySelectorAll('input[type="radio"]:checked').forEach(ans => {
+    if (ans.value === "1") score += 10;
+  });
+  document.getElementById("score").innerHTML =
+    "🏆 Skor kamu: <b>" + score + "/100</b>";
+}
+</script>
+
+</body>
+</html>
